@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "electron": "ng build && electron ."
+    "electron-build": "ng build --configuration=production && electron .",
+    "package-win": "electron-packager . hello-world-electron --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Hello World Electron\""
   },
   "private": true,
   "dependencies": {
