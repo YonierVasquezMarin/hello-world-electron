@@ -1,4 +1,6 @@
 const { app, BrowserWindow } = require("electron");
+const url = require("url");
+const path = require("path");
 
 let appWin;
 
@@ -13,8 +15,12 @@ createWindow = () => {
             nodeIntegration: true
         }
     });
-    
-    appWin.loadURL(`file://${__dirname}/dist/browser/index.html`);
+
+    appWin.loadURL(url.format({
+        pathname: path.join(__dirname, "dist/browser/index.html"),
+        protocol: "file",
+        slashes: true
+    }));
 
     appWin.setMenu(null);
 
@@ -27,6 +33,6 @@ app.on("ready", createWindow);
 
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
-      app.quit();
+        app.quit()
     }
 });
