@@ -22,7 +22,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "src/assets/platform-icons/icon.ico"
+      "icon": "src/assets/platform-icons/win/icon.ico"
     },
     "linux": {
       "target": [
