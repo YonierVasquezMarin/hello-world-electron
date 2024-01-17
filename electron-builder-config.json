@@ -18,11 +18,11 @@
       "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
     ],
     "directories": {
-      "output": "bin_platforms/${platform}/${arch}"
+      "output": "platform-binaries/${platform}/${arch}"
     },
     "win": {
       "target": "nsis",
-      "icon": "build/icon.ico"
+      "icon": "src/assets/platform-icons/icon.ico"
     },
     "linux": {
       "target": [

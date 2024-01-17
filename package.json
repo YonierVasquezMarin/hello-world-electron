@@ -12,7 +12,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-electron": "ng build --configuration=production && electron .",
-    "bin-platforms": "ng build --configuration=production && electron-builder --config electron-builder-config.json"
+    "platform-binaries": "ng build --configuration=production && electron-builder --config electron-builder-config.json"
   },
   "private": true,
   "dependencies": {
