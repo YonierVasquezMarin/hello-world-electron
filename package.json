@@ -2,8 +2,8 @@
   "name": "hello-world-electron",
   "version": "0.0.0",
   "main": "./main.js",
-  "description": "Hello World Electron",
-  "author": "Yonier Vasquez Marin",
+  "description": "Hello World Electron for show a window with Angular 11",
+  "author": "Yonier Company",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-electron": "ng build --configuration=production && electron .",
-    "dist": "ng build --configuration=production && electron-builder --config electron-builder-config.json"
+    "bin-platforms": "ng build --configuration=production && electron-builder --config electron-builder-config.json"
   },
   "private": true,
   "dependencies": {

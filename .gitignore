@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Final binaries for production
-release-builds/
+bin_platforms/
